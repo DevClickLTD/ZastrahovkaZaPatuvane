@@ -15,8 +15,8 @@ const sharp = require("sharp");
 const PUBLIC_DIR = path.join(__dirname, "../public");
 
 // LCP изображения, които ще бъдат допълнително оптимизирани
-const MOBILE_IMAGE = path.join(PUBLIC_DIR, "hero-image-mobile.jpg");
-const DESKTOP_IMAGE = path.join(PUBLIC_DIR, "hero-image-desktop.jpg");
+const MOBILE_IMAGE = path.join(PUBLIC_DIR, "zastrahova-patuvane.jpg");
+const DESKTOP_IMAGE = path.join(PUBLIC_DIR, "zastrahova-patuvane.jpg");
 
 // Временни файлове за процеса на оптимизация
 const MOBILE_TEMP = path.join(PUBLIC_DIR, "hero-image-mobile-temp.jpg");

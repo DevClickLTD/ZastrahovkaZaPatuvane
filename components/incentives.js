@@ -41,7 +41,7 @@ export default function Incentives() {
             </div>
             <img
               alt=""
-              src="/menu-hero-image.jpg"
+              src="/patuvane-v-chuzhbina.jpg"
               className="aspect-3/2 w-full rounded-lg bg-gray-100 object-cover"
             />
           </div>
@@ -49,7 +49,7 @@ export default function Incentives() {
             {incentives.map((incentive) => (
               <div key={incentive.name} className="sm:flex lg:block">
                 <div className="sm:shrink-0">
-                  <div className="h-14 w-14 flex items-center justify-center rounded-full bg-[#129160]">
+                  <div className="h-14 w-14 flex items-center justify-center rounded-full bg-[#4E6688]">
                     <img
                       alt=""
                       src={incentive.imageSrc}

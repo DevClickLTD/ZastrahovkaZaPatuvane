@@ -6,15 +6,8 @@ import dynamic from "next/dynamic";
 const Incentives = dynamic(() => import("../components/incentives"), {
   ssr: true,
 });
-const Team = dynamic(() => import("../components/team"), { ssr: true });
 const CTA = dynamic(() => import("../components/cta"), { ssr: true });
 const Clients = dynamic(() => import("../components/clients"), { ssr: true });
-const Newsletter = dynamic(() => import("../components/newsletter"), {
-  ssr: true,
-});
-const Testimonial = dynamic(() => import("../components/testimonial"), {
-  ssr: true,
-});
 const Lastestposts = dynamic(() => import("../components/latestposts"), {
   ssr: true,
 });
@@ -38,7 +31,7 @@ export const metadata = {
     description: "Открийте нашите висококачествени бизнес услуги",
     images: [
       {
-        url: "/hero-image-desktop.jpg",
+        url: "/zastrahova-patuvane.jpg",
         width: 1200,
         height: 630,
         alt: "NextLevel Services",
@@ -51,7 +44,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "NextLevel Services - Професионални бизнес услуги",
     description: "Открийте нашите висококачествени бизнес услуги",
-    images: ["/hero-image-desktop.jpg"],
+    images: ["/zastrahova-patuvane.jpg"],
   },
 };
 
@@ -61,11 +54,8 @@ export default function Home() {
       <WebVitals />
       <HeroSection />
       <Incentives />
-      <Team />
       <CTA />
       <Clients />
-      <Newsletter />
-      <Testimonial />
       <Lastestposts />
     </>
   );

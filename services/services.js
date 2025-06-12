@@ -43,3 +43,13 @@ export const getServiceBySlug = cache(async (slug) => {
 export const getServicesByCategory = cache(async (categoryId) => {
   return await fetchAPI(`services?categories=${categoryId}`);
 });
+
+/**
+ * Get services for footer navigation
+ * @returns {Promise<Array>} - List of services for footer
+ */
+export const getServicesForFooter = cache(async () => {
+  return await fetchAPI(
+    "services?_fields=id,slug,title&per_page=12&orderby=title&order=asc"
+  );
+});

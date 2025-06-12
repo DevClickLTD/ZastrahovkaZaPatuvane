@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
         <link
           rel="preload"
           as="image"
-          href="/hero-image-mobile.jpg"
+          href="/zastrahova-patuvane.jpg"
           type="image/jpg"
           media="(max-width: 640px)"
         />
@@ -92,7 +92,7 @@ export default function RootLayout({ children }) {
         <link
           rel="preload"
           as="image"
-          href="/hero-image-desktop.jpg"
+          href="/zastrahova-patuvane.jpg"
           type="image/jpg"
           media="(min-width: 641px)"
         />
@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={roboto.className}>
-        <NextTopLoader showSpinner={false} color="#129160"/>
+        <NextTopLoader showSpinner={false} color="#4E6688"/>
         <BackToTop />
         <CallButton />
         <ImagePreloader />

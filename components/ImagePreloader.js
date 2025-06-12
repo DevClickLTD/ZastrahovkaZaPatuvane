@@ -4,8 +4,8 @@ import { useEffect } from "react";
 
 // Списък с изображения, които трябва да се заредят предварително
 const CRITICAL_IMAGES = [
-  "/hero-image-mobile.jpg", // Hero изображение - мобилна версия
-  "/hero-image-desktop.jpg", // Hero изображение - десктоп версия
+  "/zastrahova-patuvane.jpg", // Hero изображение - мобилна версия
+  "/zastrahova-patuvane.jpg", // Hero изображение - десктоп версия
 ];
 
 /**
@@ -19,8 +19,8 @@ export default function ImagePreloader() {
       // Определяме кое изображение трябва да заредим първо според устройството
       const isMobile = window.innerWidth <= 640;
       const priorityImage = isMobile
-        ? "/hero-image-mobile.jpg"
-        : "/hero-image-desktop.jpg";
+        ? "/zastrahova-patuvane.jpg"
+        : "/zastrahova-patuvane.jpg";
 
       // Зареждаме приоритетното изображение първо
       const loadPriorityImage = () => {

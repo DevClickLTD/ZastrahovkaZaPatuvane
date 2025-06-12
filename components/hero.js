@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="w-full">
             {/* Директно използване на HTML img за максимална производителност на LCP */}
             <img
-              src="/hero-image-mobile.jpg"
+              src="/zastrahova-patuvane.jpg"
               width={640}
               height={400}
               alt="Hero image"
@@ -47,7 +47,7 @@ export default function Hero() {
             <div className="mt-8 flex items-center gap-x-4">
               <Link
                 href="/services"
-                className="rounded-md bg-[#129160] hover:bg-gray-300 hover:text-[#000000] px-3 py-2 text-sm font-semibold text-black shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-[#4E6688] hover:bg-gray-300 hover:text-[#000000] px-3 py-2 text-sm font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Услуги
               </Link>
@@ -80,7 +80,7 @@ export default function Hero() {
                       Полезни статии и новини от нашия блог.{" "}
                       <Link
                         href="/blog"
-                        className="font-semibold whitespace-nowrap text-[#129160]"
+                        className="font-semibold whitespace-nowrap text-[#4E6688]"
                       >
                         <span aria-hidden="true" className="absolute inset-0" />
                         Вижте повече <span aria-hidden="true">&rarr;</span>
@@ -106,7 +106,7 @@ export default function Hero() {
                   <div className="mt-10 flex items-center gap-x-6">
                     <Link
                       href="/services"
-                      className="rounded-md text-[#000000] bg-[#129160] hover:bg-gray-300 hover:text-[#000000] px-3.5 py-2.5 text-sm font-semibold text-black shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="rounded-md bg-[#4E6688] hover:bg-gray-300 hover:text-[#000000] px-3 py-2 text-sm font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Услуги
                     </Link>
@@ -124,7 +124,7 @@ export default function Hero() {
           <div className="bg-gray-50 absolute inset-y-0 right-0 w-1/2">
             {/* Директно използване на HTML img за десктоп версията */}
             <img
-              src="/hero-image-desktop.jpg"
+              src="/zastrahova-patuvane.jpg"
               width={955}
               height={776}
               alt="Hero image"
