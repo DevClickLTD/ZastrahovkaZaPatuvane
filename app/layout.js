@@ -75,10 +75,10 @@ export default function RootLayout({ children }) {
         <CriticalCSS />
         <link
           rel="preconnect"
-          href="https://nextlevel.admin-panels.com"
+          href="https://zastrahovkazapatuvane.admin-panels.com"
           crossOrigin="anonymous"
         />
-        <link rel="dns-prefetch" href="https://nextlevel.admin-panels.com" />
+        <link rel="dns-prefetch" href="https://zastrahovkazapatuvane.admin-panels.com" />
 
         {/* Директно използване на preload тагове с правилния синтаксис */}
         <link
