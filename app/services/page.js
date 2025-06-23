@@ -17,19 +17,27 @@ const ServicesList = dynamic(() => import("../../components/ServicesList"), {
 export const revalidate = 3600;
 
 export const metadata = {
-  title: "Услуги - NextLevel Theme",
+  title: "Застрахователни услуги за пътуване | Видове застраховки",
   description:
-    "Разгледайте всички наши професионални услуги, които предлагаме за бизнеса. Открийте как можем да помогнем на вашия бизнес да расте и да се развива.",
-  keywords: ["услуги", "бизнес услуги", "професионални услуги", "NextLevel"],
+    "Разгледайте всички наши застрахователни услуги за пътуване в чужбина. Медицинска застраховка, багажна застраховка, застраховка за анулиране и много други.",
+  keywords: [
+    "застрахователни услуги",
+    "видове застраховки пътуване", 
+    "медицинска застраховка",
+    "багажна застраховка",
+    "застраховка анулиране",
+    "спортна застраховка",
+    "бизнес пътуване застраховка"
+  ],
   openGraph: {
-    title: "Професионални Услуги | NextLevel Services",
-    description: "Разгледайте всички наши професионални услуги",
+    title: "Застрахователни услуги за пътуване | Видове застраховки",
+    description: "Разгледайте всички наши застрахователни услуги за пътуване в чужбина",
     images: [
       {
-        url: "/services-og-image.jpg",
+        url: "/zastrahova-patuvane.jpg",
         width: 1200,
         height: 630,
-        alt: "NextLevel Services",
+        alt: "Застрахователни услуги за пътуване",
       },
     ],
   },
@@ -57,15 +65,16 @@ export default async function Services() {
         item: {
           "@type": "Service",
           name: service.title.rendered,
-          url: `https://example.bg/services/${service.slug}`,
+          url: `https://zastrahovkazapatuvane.com/services/${service.slug}`,
           description:
             service.content.rendered.replace(/<[^>]+>/g, "").substring(0, 150) +
             "...",
           provider: {
-            "@type": "Organization",
-            name: "NextLevel Services",
-            url: "https://example.bg",
+            "@type": "InsuranceAgency",
+            name: "Застраховка за пътуване",
+            url: "https://zastrahovkazapatuvane.com",
           },
+          serviceType: "Застрахователни услуги за пътуване"
         },
       })),
     };

@@ -9,9 +9,21 @@ import Link from "next/link";
 
 export async function generateMetadata() {
   return {
-    title: "Контакти - NextLevel Theme",
+    title: "Контакти - Застраховка за пътуване",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Свържете се с нас за консултация относно застраховка за пътуване. Телефон, имейл и адрес за връзка с нашите специалисти по застрахователни услуги.",
+    keywords: [
+      "контакти застраховка пътуване",
+      "телефон застрахователен брокер",
+      "консултация застраховка",
+      "връзка със застрахователен агент"
+    ],
+    openGraph: {
+      title: "Контакти - Застраховка за пътуване",
+      description: "Свържете се с нас за консултация относно застраховка за пътуване",
+      images: ["/zastrahova-patuvane.jpg"],
+      type: "website"
+    }
   };
 }
 

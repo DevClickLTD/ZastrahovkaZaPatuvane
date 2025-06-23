@@ -33,9 +33,10 @@ export async function generateMetadata({ params }) {
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords || [
-      "услуги",
-      "професионални услуги",
+      "застрахователни услуги",
+      "застраховка за пътуване",
       slug.replace(/-/g, " "),
+      "здравна застраховка чужбина"
     ],
     openGraph: {
       title: meta.og_title,
@@ -79,14 +80,15 @@ export default async function ServicePage({ params }) {
       description:
         service[0].content.rendered.replace(/<[^>]+>/g, "").substring(0, 200) +
         "...",
-      url: meta.canonical || `https://example.bg/services/${slug}`,
+      url: meta.canonical || `https://zastrahovkazapatuvane.com/services/${slug}`,
       provider: {
-        "@type": "Organization",
-        name: "NextLevel Services",
-        url: "https://example.bg",
-        logo: "https://example.bg/logo.png",
+        "@type": "InsuranceAgency",
+        name: "Застраховка за пътуване",
+        url: "https://zastrahovkazapatuvane.com",
+        logo: "https://zastrahovkazapatuvane.com/zastrahova-patuvane.jpg",
       },
-      image: ogImage || "https://example.bg/placeholder.webp",
+      image: ogImage || "https://zastrahovkazapatuvane.com/zastrahova-patuvane.jpg",
+      serviceType: "Застрахователни услуги за пътуване",
       offers: {
         "@type": "Offer",
         price: "Свържете се с нас за цена",

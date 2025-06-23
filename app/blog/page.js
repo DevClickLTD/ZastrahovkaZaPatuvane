@@ -2,9 +2,22 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Блог - NextLevel Theme",
+  title: "Блог - Съвети за пътуване и застраховки",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Полезни съвети за пътуване в чужбина, информация за застрахователни продукти, новини и актуални статии за здравна застраховка при пътуване.",
+  keywords: [
+    "блог застраховка пътуване",
+    "съвети пътуване чужбина",
+    "новини застрахователни продукти",
+    "здравна застраховка съвети",
+    "пътнически застрахователни статии"
+  ],
+  openGraph: {
+    title: "Блог - Съвети за пътуване и застраховки",
+    description: "Полезни съвети за пътуване в чужбина и информация за застрахователни продукти",
+    images: ["/zastrahova-patuvane.jpg"],
+    type: "website"
+  }
 };
 
 export default async function Blog({ searchParams }) {

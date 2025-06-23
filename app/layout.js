@@ -28,25 +28,33 @@ export async function generateMetadata() {
   return {
     metadataBase: new URL(`${protocol}://${host}`),
     title: {
-      template: "%s | NextLevel Services",
-      default: "NextLevel Services | Професионални бизнес услуги",
+      template: "%s | Застраховка за пътуване",
+      default: "Застраховка за пътуване | Онлайн застраховка за пътуване в чужбина",
     },
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Онлайн застраховка за пътуване в чужбина на най-добри цени. Сравнете оферти от различни застрахователи и купете застраховка за пътуване лесно и безопасно.",
+    keywords: [
+      "застраховка за пътуване",
+      "пътническа застраховка", 
+      "здравна застраховка чужбина",
+      "онлайн застраховка",
+      "евтина застраховка пътуване",
+      "медицинска застраховка пътуване"
+    ],
     openGraph: {
-      title: "NextLevel Services | Професионални бизнес услуги",
+      title: "Застраховка за пътуване | Онлайн застраховка за пътуване в чужбина",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      images: "/lawyer.webp",
+        "Онлайн застраховка за пътуване в чужбина на най-добри цени. Сравнете оферти от различни застрахователи и купете застраховка за пътуване лесно и безопасно.",
+      images: "/zastrahova-patuvane.jpg",
       type: "website",
       locale: "bg_BG",
-      siteName: "NextLevel Services",
+      siteName: "Застраховка за пътуване",
     },
     twitter: {
       card: "summary_large_image",
-      title: "NextLevel Services",
-      description: "Lorem ipsum dolor sit amet",
-      images: ["/lawyer.webp"],
+      title: "Застраховка за пътуване",
+      description: "Онлайн застраховка за пътуване в чужбина на най-добри цени",
+      images: ["/zastrahova-patuvane.jpg"],
     },
     robots: {
       index: true,
@@ -115,23 +123,34 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LegalService",
-              name: "Lorem ipsum dolor sit amet",
+              "@type": "InsuranceAgency",
+              name: "Застраховка за пътуване",
               description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              url: "https://example.bg",
+                "Онлайн платформа за сравняване и закупуване на застраховки за пътуване в чужбина. Предлагаме най-добрите цени от водещи застрахователи.",
+              url: "https://zastrahovkazapatuvane.com",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+359XXXXXXXXX",
                 contactType: "customer service",
+                availableLanguage: "Bulgarian"
               },
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Example Street 123",
+                streetAddress: "ул. Пример 123",
                 addressLocality: "София",
                 postalCode: "1000",
                 addressCountry: "BG",
               },
+              areaServed: {
+                "@type": "Country",
+                name: "Bulgaria"
+              },
+              serviceType: [
+                "Застраховка за пътуване в чужбина",
+                "Медицинска застраховка за пътуване", 
+                "Пътническа застраховка",
+                "Спортна застраховка"
+              ]
             }),
           }}
         />

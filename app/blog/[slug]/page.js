@@ -15,6 +15,14 @@ export async function generateMetadata({ params }) {
   return {
     title: meta.title,
     description: meta.description,
+    keywords: [
+      "застраховка за пътуване",
+      "пътнически съвети",
+      "здравна застраховка чужбина",
+      "съвети за пътуване",
+      "застрахователни новини",
+      slug.replace(/-/g, " ")
+    ],
     openGraph: {
       title: meta.og_title,
       description: meta.og_description,
