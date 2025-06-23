@@ -1,5 +1,4 @@
 import { getContactInfo } from "../../services/contacts";
-import { BreadcrumbSchema } from "../../components/StructuredData";
 import Script from "next/script";
 
 export async function generateMetadata() {
@@ -49,15 +48,6 @@ export default async function TermsAndConditions() {
 
   return (
     <div className="container mx-auto p-6 max-w-5xl bg-white py-12 prose prose-lg">
-      {/* Структурирани данни за страницата */}
-      <BreadcrumbSchema items={breadcrumbItems} />
-      <Script
-        id="terms-conditions-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(webPageData),
-        }}
-      />
 
       <h1 className="text-3xl font-bold mb-4 text-gray-800 border-b pb-2">
         Общи условия
