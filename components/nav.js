@@ -43,6 +43,7 @@ export default function Navigation() {
     pages: [
       { name: "Начало", href: "/" },
       { name: "Блог", href: "/blog" },
+      { name: "За нас", href: "/za-nas" },
       { name: "Контакти", href: "/contact" },
     ],
   });
