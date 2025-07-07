@@ -65,13 +65,22 @@ export default async function ContactPage() {
               </svg>
             </div>
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-              Свържете се с нас
+              Свържете се с нас – ние сме тук, за да помогнем!
             </h2>
-            {/* <p className="mt-6 text-lg/8 text-gray-600">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci
-              molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-              Arcu sed malesuada et magna.
-            </p> */}
+            <p className="mt-6 text-lg/8 text-gray-600">
+              Имате въпроси относно туристическите застраховки? Нуждаете се от помощ при избора на правилното покритие? 
+              Нашият екип е на разположение, за да ви съдейства. Не се колебайте да се свържете с нас по удобен за вас начин.
+            </p>
+            
+            {/* Работно време */}
+            <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+              <h3 className="text-sm font-semibold text-gray-900 mb-2">Работно време:</h3>
+              <p className="text-sm text-gray-600">
+                Понеделник - Петък: 8:30 - 18:00<br/>
+                Събота: 9:00 - 14:00
+              </p>
+            </div>
+            
             <dl className="mt-10 space-y-4 text-base text-gray-600">
               {contactInfo && (
                 <>
@@ -110,6 +119,16 @@ export default async function ContactPage() {
                 </>
               )}
             </dl>
+            
+            <div className="mt-8 p-4 bg-gray-50 rounded-lg">
+              <p className="text-sm text-gray-600">
+                Можете да използвате и нашата форма за контакт на сайта, за да ни изпратите съобщение. 
+                Ще се свържем с вас възможно най-скоро.
+              </p>
+              <p className="text-sm text-gray-600 mt-2">
+                Последвайте ни във Facebook и Instagram за актуални оферти и новини!
+              </p>
+            </div>
           </div>
         </div>
         <ContactForm />

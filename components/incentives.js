@@ -1,21 +1,21 @@
 const incentives = [
   {
-    name: "Lorem ipsum 1",
+    name: "Бърза онлайн поръчка",
     imageSrc: "/icons/cta-icon-1.svg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Бърза онлайн поръчка за минути с моментално издаване на полица. Лесен процес на сключване без излишни формалности.",
   },
   {
-    name: "Lorem ipsum 2",
+    name: "Покритие в цял свят",
     imageSrc: "/icons/cta-icon-2.svg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Покритие в цял свят с 24/7 асистентска помощ на български език. Защита във всяка точка на планетата.",
   },
   {
-    name: "Lorem ipsum 3",
+    name: "Гъвкави пакети",
     imageSrc: "/icons/cta-icon-3.svg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Гъвкави пакети за индивидуални, семейни и групови пътувания. Персонализирани решения според вашите нужди.",
   },
 ];
 
@@ -27,16 +27,13 @@ export default function Incentives() {
           <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
             <div>
               <h2 className="text-4xl font-bold tracking-tight text-white">
-                Lorem ipsum
+                Защо да изберете нас?
               </h2>
               <p className="mt-4 text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Когато се планирате пътуване, сигурността трябва да е на първо място. 
+                Застраховките за пътуване предлагат пълна защита и спокойствие, във всяка точка на света. 
+                Без значение дали пътувате за работа, ваканция или обучение в чужбина, ние предлагаме 
+                изчерпателно покритие за всяка ситуация – от медицински разходи до спешна помощ.
               </p>
             </div>
             <img

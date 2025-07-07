@@ -30,19 +30,17 @@ export default function Hero() {
 
           <div className="px-6 py-10">
             <h1 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900 font-display">
-              "Lorem ipsum dolor sit amet"
+              Вашето безгрижно пътуване започва оттук!
             </h1>
             <p className="mt-4 text-2xl font-medium font-display">
-              Lorem ipsum dolor sit amet
+              Бързо и сигурно онлайн застраховане за пътувания в чужбина
             </p>
             <p className="mt-6 text-sm font-medium text-pretty text-gray-500 font-display">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Всяко приключение трябва да бъде изпълнено с радост, нови
+              преживявания и никакви грижи. Спокойствие и защита по време на
+              пътуванията с надеждни и персонализирани застрахователни продукти,
+              които покриват непредвидените ситуации, където и да е по света.
+              Гъвкави опции и лесен процес на сключване на застраховка!
             </p>
             <div className="mt-8 flex items-center gap-x-4">
               <Link
@@ -88,20 +86,18 @@ export default function Hero() {
                     </div>
                   </div>
                   <h1 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-7xl font-display">
-                    "Lorem ipsum dolor sit amet"
+                    Вашето безгрижно пътуване започва оттук!
                   </h1>
                   <p className="mt-8 text-4xl font-medium font-display">
-                    Lorem ipsum
+                    Бързо и сигурно онлайн застраховане за пътувания в чужбина
                   </p>
                   <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8 font-display">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    Всяко приключение трябва да бъде изпълнено с радост, нови
+                    преживявания и никакви грижи. Спокойствие и защита по време
+                    на пътуванията с надеждни и персонализирани застрахователни
+                    продукти, които покриват непредвидените ситуации, където и
+                    да е по света. Гъвкави опции и лесен процес на сключване на
+                    застраховка!
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <Link

@@ -52,11 +52,13 @@ export default async function Blog({ searchParams }) {
           <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-12 text-center shadow-2xl sm:px-12">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                От нашия блог
+                Пътеводител за информирано и сигурно пътуване
               </h1>
               <p className="mt-6 text-lg/8 text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Открийте последните новини от света на туристическите застраховки, 
+                полезни съвети за безопасни пътувания и подробни ръководства за различните 
+                видове покрития. Експерти споделят знания и опит, за да направят пътувания 
+                още по-сигурни и приятни.
               </p>
             </div>
             <svg
