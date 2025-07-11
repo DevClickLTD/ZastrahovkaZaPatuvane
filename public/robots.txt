@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Disallow API routes and admin panels
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important pages
+Allow: /
+Allow: /services
+Allow: /services/*
+Allow: /blog
+Allow: /blog/*
+Allow: /za-nas
+Allow: /contact
+Allow: /privacy-policy
+Allow: /obsthi-usloviya
+
+# Sitemap location
+Sitemap: https://zastrahovkazapatuvane.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1 
