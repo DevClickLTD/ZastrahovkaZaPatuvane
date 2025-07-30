@@ -80,7 +80,7 @@ export default function ContactForm() {
       )}
       <form
         onSubmit={handleSubmit}
-        className={`px-6 pt-20 pb-24 sm:pb-24 lg:px-8 lg:py-24 ${
+        className={`px-6 pt-4 pb-6 sm:pb-6 lg:px-8 lg:py-6 ${
           loading ? "opacity-50 pointer-events-none" : ""
         }`}
       >
