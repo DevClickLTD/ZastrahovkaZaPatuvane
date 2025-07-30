@@ -158,7 +158,9 @@ export default async function ServicePage({ params }) {
                       Имате въпроси относно тази услуга? Изпратете ни запитване и ще се свържем с вас възможно най-скоро.
                     </p>
                   </div>
-                  <ContactForm />
+                  <div className="[&>div>form]:!pt-4 [&>div>form]:!pb-6 [&>div>form]:lg:!py-6">
+                    <ContactForm />
+                  </div>
                 </div>
               </div>
             </div>
