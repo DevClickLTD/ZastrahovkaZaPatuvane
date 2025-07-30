@@ -56,6 +56,7 @@ export default function Navigation() {
 
         if (!services || !Array.isArray(services) || services.length === 0) {
           console.warn("No services found from API");
+          setLoading(false);
           return;
         }
 
@@ -87,6 +88,7 @@ export default function Navigation() {
         setLoading(false);
       } catch (error) {
         console.error("Error fetching navigation data:", error);
+        setLoading(false);
       }
     };
 
@@ -105,9 +107,15 @@ export default function Navigation() {
     setShowResults(true);
 
     const delayDebounceFn = setTimeout(async () => {
-      const results = await searchContent(searchQuery);
-      setSearchResults(results);
-      setIsSearching(false);
+      try {
+        const results = await searchContent(searchQuery);
+        setSearchResults(results || []);
+        setIsSearching(false);
+      } catch (error) {
+        console.error("Search error:", error);
+        setSearchResults([]);
+        setIsSearching(false);
+      }
     }, 300);
 
     return () => clearTimeout(delayDebounceFn);
