@@ -13,9 +13,15 @@ export default function LatestPosts() {
   useEffect(() => {
     setLoading(true);
     const fetchLatestPosts = async () => {
-      const postsData = await getLatestPosts();
-      setPosts(postsData);
-      setLoading(false);
+      try {
+        const postsData = await getLatestPosts();
+        setPosts(postsData || []);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching latest posts:", error);
+        setPosts([]);
+        setLoading(false);
+      }
     };
 
     fetchLatestPosts();
