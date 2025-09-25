@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
-import { PhoneIcon } from '@heroicons/react/24/solid';
+import { PhoneIcon } from "@heroicons/react/24/solid";
 
 export default function CallButton() {
-  const phoneNumber = '+359888888888';
-  const displayNumber = '+359 888 888 888';
+  const phoneNumber = "+359888964787";
+  const displayNumber = "+359 888 964787";
 
   return (
     <div className="fixed bottom-6 right-6 z-50 block md:hidden">
@@ -18,4 +18,4 @@ export default function CallButton() {
       </a>
     </div>
   );
-} 
+}
